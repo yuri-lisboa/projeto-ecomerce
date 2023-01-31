@@ -2,4 +2,8 @@ node_modules
 
 .env
 
+<<<<<<< HEAD
 .dist
+=======
+.env.exemple
+>>>>>>> 073de910346d9709370fbeb7f64ea73cffbfb0d0

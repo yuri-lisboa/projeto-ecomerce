@@ -3,15 +3,21 @@ import { Router, Request, Response } from 'express';
 require('dotenv').config();
 
 const app = express();
-const router = Router();
+// const router = Router();
+// app.use(express.json());
+
+// router.get('/', (req: Request, res: Response) => {
+//   res.send('hello');
+// });
+
+// router.post('/buying', (req: Request, res: Response) => {
+//   res.send('hellob');
+// });
+
 app.use(express.json());
 
-router.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('hello');
-});
-
-router.post('/buying', (req: Request, res: Response) => {
-  res.send('hellob');
 });
 
 const PORT = process.env.NODE_DOCKER_PORT || 3000;
